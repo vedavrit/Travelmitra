@@ -1,0 +1,20 @@
+{
+  "name": "travelmitra",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TravelMitra - full-stack travel planning website built with HTML, CSS, JavaScript, Node.js and Express (file-based JSON storage, no database setup)",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

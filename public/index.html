@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TravelMitra helps you discover India, plan memorable trips and manage your travel budget.">
+  <title>TravelMitra — Find Your Somewhere</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">✦</span> travel<span>mitra</span></a>
+  <nav id="mainNav"><a href="#explore">Explore</a><a href="#planner">Trip planner</a><a href="#guides">Travel guides</a><a href="#about">About</a></nav>
+  <div class="nav-actions"><button class="btn btn-ghost" id="loginBtn">Log in</button><button class="btn btn-dark" id="signupBtn">Get started <span>↗</span></button><button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button></div>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-bg"></div><div class="hero-content">
+    <div class="eyebrow"><span class="live-dot"></span> YOUR NEXT CHAPTER IS OUT THERE</div>
+    <h1>Find your<br><em>somewhere.</em></h1>
+    <p class="hero-copy">Big mountains. Hidden cafés. Roads that go on forever. Let’s make your next trip a story worth telling.</p>
+    <a href="#explore" class="btn btn-orange btn-large">Explore destinations <span>↗</span></a>
+    <div class="hero-social"><div class="avatar-stack"><i>✦</i><i>☀</i><i>☺</i></div><span><b>Made for curious travellers</b><small>One good trip can change everything.</small></span></div>
+  </div>
+  <div class="hero-note"><span>01 / 04</span><span class="note-line"></span><span>THE WORLD IS YOURS</span></div>
+  <div class="hero-sticker">GO<br><b>WILD</b><span>✳</span></div>
+</section>
+<section class="quick-search wrap"><div class="search-intro"><span class="eyebrow">LET THE FUN BEGIN</span><h2>Where to next?</h2></div>
+  <form id="searchForm" class="search-panel"><label><span>⌖</span><div><small>DESTINATION</small><input id="searchInput" placeholder="Try Manali, Goa..." autocomplete="off"></div></label><div class="search-divider"></div><label><span>☼</span><div><small>TRIP VIBE</small><select id="vibeSelect"><option value="All">Any kind of trip</option><option>Mountains</option><option>Adventure</option><option>Beach</option><option>Nature</option><option>Culture</option></select></div></label><button class="search-submit" type="submit">Find my place <b>↗</b></button></form>
+</section>
+<section class="section wrap" id="explore"><div class="section-head"><div><span class="eyebrow">A LITTLE INSPIRATION</span><h2>Places that <em>pull you in.</em></h2><p>Handpicked corners of India for your next great escape.</p></div><a href="#explore" class="text-link" id="viewAll">See all places ↗</a></div>
+  <div class="filter-row" id="filters"><button class="filter active" data-filter="All">All places</button><button class="filter" data-filter="Mountains">⛰ Mountains</button><button class="filter" data-filter="Adventure">⚡ Adventure</button><button class="filter" data-filter="Beach">☼ Beaches</button><button class="filter" data-filter="Nature">✿ Nature</button><button class="filter" data-filter="Culture">✧ Culture</button></div>
+  <div class="destination-grid" id="destinationGrid"><div class="loading">Finding lovely places for you…</div></div>
+</section>
+<section class="planner-band" id="planner"><div class="wrap planner-inner"><div class="planner-art"><div class="sun"></div><div class="mountain m1"></div><div class="mountain m2"></div><div class="planner-stamp">YOUR<br>NEXT<br>ADVENTURE ✳</div></div>
+  <div class="planner-copy"><span class="eyebrow">LESS SCROLLING, MORE EXPLORING</span><h2>Your trip.<br><em>Your rules.</em></h2><p>Bring the ideas together. Pick your dates, set a budget and save your own little adventure plan.</p><button class="btn btn-dark btn-large" id="openPlanner">Build my itinerary <span>↗</span></button></div></div></section>
+<section class="section wrap" id="guides"><div class="section-head"><div><span class="eyebrow">GOOD TO KNOW BEFORE YOU GO</span><h2>A few <em>travel notes.</em></h2><p>Little tips to make the journey smoother.</p></div></div>
+ <div class="guide-grid"><article class="guide-card guide-one"><span>01 · THE SMART PACKER</span><h3>Pack light.<br>Go far.</h3><p>A simple checklist for the road.</p><span class="guide-arrow">↗</span></article><article class="guide-card guide-two"><span>02 · MONEY MATTERS</span><h3>More trip.<br>Less spend.</h3><p>Make your travel budget go further.</p><span class="guide-arrow">↗</span></article><article class="guide-card guide-three"><span>03 · TAKE THE SCENIC ROUTE</span><h3>Slow travel<br>is good travel.</h3><p>Give a place time to surprise you.</p><span class="guide-arrow">↗</span></article></div>
+</section>
+<section class="about-section" id="about"><div class="wrap about-inner"><div><span class="eyebrow">A TRAVEL BUDDY, NOT A BOOKING BOT</span><h2>Go with a plan.<br><em>Come back with stories.</em></h2></div><p>TravelMitra brings destination inspiration and simple trip planning together. Explore at your pace, keep an eye on your budget, and make every journey your own.</p></div></section>
+<section class="section wrap feedback-section"><div><span class="eyebrow">HELP US GET BETTER</span><h2>Got a thought?<br><em>We're all ears.</em></h2></div><form id="feedbackForm" class="feedback-form"><input name="name" placeholder="Your name" required><input name="email" type="email" placeholder="Email address" required><select name="rating"><option value="5">★★★★★ — Loved it</option><option value="4">★★★★ — Pretty good</option><option value="3">★★★ — It's okay</option><option value="2">★★ — Needs work</option><option value="1">★ — Not for me</option></select><textarea name="message" placeholder="Tell us what you think…" required></textarea><button class="btn btn-orange" type="submit">Send feedback ↗</button></form></section>
+</main>
+<footer><div class="wrap footer-inner"><a class="brand" href="#"><span class="brand-mark">✦</span> travel<span>mitra</span></a><p>Made for the ones who never stop wondering.</p><span>© 2026 TravelMitra · Explore responsibly 🌱</span></div></footer>
+<div class="modal-backdrop" id="modalBackdrop" hidden><div class="modal" role="dialog" aria-modal="true"><button class="modal-close" id="modalClose" aria-label="Close dialog">×</button><div id="modalContent"></div></div></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="app.js"></script>
+</body></html>
